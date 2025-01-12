@@ -1,0 +1,42 @@
+# 网站设置
+title: Zhenling Links
+description: 欢迎访问正凌链接！专注机械设备，连接全球市场。
+baseurl: "" # 如果没有子目录，保持为空
+url: "https://<你的用户名>.github.io/Zhenling_Links" # 将<你的用户名>替换为你的GitHub用户名
+
+# 主题设置
+theme: jekyll-theme-primer # 设置为GitHub Pages支持的主题之一
+
+# Markdown设置
+markdown: kramdown
+kramdown:
+  input: GFM # GitHub风格的Markdown
+
+# 插件列表
+plugins:
+  - jekyll-seo-tag # 用于SEO优化
+  - jekyll-github-metadata # GitHub Pages默认支持的插件
+  - jekyll-relative-links # 修复链接问题
+  - jekyll-sitemap # 自动生成站点地图
+
+# 忽略以下文件（可选）
+exclude:
+  - README.md # 如果不想让README显示在站点中
+  - .gitignore
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+
+# 默认设置
+defaults:
+  -
+    scope:
+      path: "" # 应用于所有文件
+    values:
+      layout: "default" # 使用默认布局
+
+# 输出格式（可选）
+permalink: pretty # 更简洁的URL
+
+# 构建设置
+future: true # 启用构建未来日期的文章
